@@ -8,6 +8,7 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import { Http } from "./component/Htttp";
+import Demo from './component/Demo';
 
 const queryClient = new QueryClient()
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className='container'>
-        <Http />
+        <Demo />
       </div>
     </QueryClientProvider>
 
